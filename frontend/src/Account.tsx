@@ -5,7 +5,7 @@ export default function Account({ session }: any) {
   const [loading, setLoading] = useState<boolean>(true);
   const [username, setUsername] = useState<any>(null);
   const [website, setWebsite] = useState<any>(null);
-  const [avatar_url, setAvatarUrl] = useState<any>(null);
+  // const [avatar_url, setAvatarUrl] = useState<any>(null);
 
   useEffect(() => {
     let ignore = false;
@@ -25,7 +25,7 @@ export default function Account({ session }: any) {
         } else if (data) {
           setUsername(data.username);
           setWebsite(data.website);
-          setAvatarUrl(data.avatar_url);
+          // setAvatarUrl(data.avatar_url);
         }
       }
 
@@ -58,7 +58,7 @@ export default function Account({ session }: any) {
     if (error) {
       alert(error.message);
     } else {
-      setAvatarUrl(avatarUrl);
+      // setAvatarUrl(avatarUrl);
     }
     setLoading(false);
   }
