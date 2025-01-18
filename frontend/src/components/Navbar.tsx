@@ -31,11 +31,11 @@ export default function Navbar() {
             alt="Logo"
             className="mx-auto"
           />
-          <ul className="justify-end list-none">
+          {/* <ul className="justify-end list-none">
             <li className="mx-auto">Example</li>
             <li className="mx-auto">Example</li>
             <li className="mx-auto">Example</li>
-          </ul>
+          </ul> */}
         </section>
       </header>
     </React.Fragment>
