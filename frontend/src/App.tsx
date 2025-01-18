@@ -1,32 +1,34 @@
-import "./App.css";
-import React, { useState, useEffect } from "react";
-import { supabase } from "./supabaseClient";
-import Auth from "./Auth";
-import Account from "./Account";
+import * as React from "react";
+// import { supabase } from "./supabaseClient";
+// import Auth from "./Auth";
+// import Account from "./Account";
+
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [session, setSession] = useState<any>(null);
+  // const [session, setSession] = React.useState<any>(null);
 
-  useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }: any) => {
-      setSession(session);
-    });
+  // React.useEffect(() => {
+  //   supabase.auth.getSession().then(({ data: { session } }: any) => {
+  //     setSession(session);
+  //   });
 
-    supabase.auth.onAuthStateChange((_event: any, session: any) => {
-      setSession(session);
-    });
-  }, []);
+  //   supabase.auth.onAuthStateChange((_event: any, session: any) => {
+  //     setSession(session);
+  //   });
+  // }, []);
 
   return (
-    <>
-      <div className="container" style={{ padding: "50px 0 100px 0" }}>
+    <React.Fragment>
+      <Navbar />
+      {/* <div className="container" style={{ padding: "50px 0 100px 0" }}>
         {!session ? (
           <Auth />
         ) : (
           <Account key={session.user.id} session={session} />
         )}
-      </div>
-    </>
+      </div> */}
+    </React.Fragment>
   );
 }
 

@@ -14,7 +14,7 @@ export default function Account({ session }: any) {
       setLoading(true);
       const { user } = session;
 
-      const { data, error } : any = await supabase
+      const { data, error }: any = await supabase
         .from("profiles")
         .select(`username, website, avatar_url`)
         .eq("id", user.id)
@@ -46,7 +46,7 @@ export default function Account({ session }: any) {
     setLoading(true);
     const { user } = session;
 
-    const updates : any = {
+    const updates: any = {
       id: user.id,
       username,
       website,
