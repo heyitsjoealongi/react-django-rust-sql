@@ -4,6 +4,7 @@ import * as React from "react";
 // import Account from "./Account";
 
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   // const [session, setSession] = React.useState<any>(null);
@@ -20,16 +21,19 @@ function App() {
 
   return (
     <React.Fragment>
-      <main>
-        <Navbar />
-        {/* <div className="container" style={{ padding: "50px 0 100px 0" }}>
+      <div className="bitsbythebyte">
+        <main className="flex flex-col flex-wrap justify-between mx-auto">
+          <Navbar />
+          {/* <div className="container" style={{ padding: "50px 0 100px 0" }}>
         {!session ? (
           <Auth />
         ) : (
           <Account key={session.user.id} session={session} />
         )}
       </div> */}
-      </main>
+          <Footer />
+        </main>
+      </div>
     </React.Fragment>
   );
 }

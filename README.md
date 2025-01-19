@@ -1,10 +1,10 @@
-# byte-ship
+# bitsbythebyte
+
 A collection of tools and services for the cyberspace all-in-one application.
 
 ## React
 
 npx create-react-app my-app --template typescript
-
 
 ## Python
 
@@ -16,7 +16,7 @@ Get-Command python
 
 python -m pip install --upgrade pip
 
-echo "*" > .venv/.gitignore
+echo "\*" > .venv/.gitignore
 
 pip install "fastapi[standard]"
 
