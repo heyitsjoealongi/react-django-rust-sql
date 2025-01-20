@@ -4,11 +4,25 @@ import * as React from "react";
 // Packages -%- ////
 
 // Types -%- ////
+// type DropdownProps = {
+//   id: number;
+//   category: string;
+//   href: string;
+//   target: string;
+//   dropdown: {
+//     id: number;
+//     title: string;
+//     description: string;
+//     href: string;
+//     target: string;
+//   }[];
+// };
 
 // System Components -%- ////
 
 // Components -%- ////
 import Dropdown from "./items/Dropdown";
+import Slidedown from "./items/Slidedown";
 
 // Middleware & Integrations -%- ////
 const links = [
@@ -201,44 +215,29 @@ export default function Navbar() {
         </section>
       </header>
       {open === true ? (
-        <section className="block w-full bg-dark border border-light">
-          <ul className="lg:hidden flex flex-col flex-nowrap p-1 list-none">
-            <li className="text-sm font-normal subpixel-antialiased text-bright">
-              <a
-                href="https://bitsbythebyte.pub/"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="Articles Link"
-                type="link"
-                className="block p-1 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border hover:border-light hover:rounded active:bg-darkoff active:border active:border-light active:rounded"
+        <section className="lg:hidden block w-full p-3 bg-dark border border-light">
+          <ul className="flex flex-col flex-nowrap p-1 list-none">
+            {links?.map(({ id, category, href, target, dropdown }) => (
+              <li
+                className="text-sm font-normal subpixel-antialiased text-bright"
+                key={id}
               >
-                Articles
-              </a>
-            </li>
-            <li className="text-sm font-normal subpixel-antialiased text-bright">
-              <a
-                href="https://bitsbythebyte.pub/"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="Articles Link"
-                type="link"
-                className="block p-1 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border hover:border-light hover:rounded active:bg-darkoff active:border active:border-light active:rounded"
-              >
-                Articles
-              </a>
-            </li>
-            <li className="text-sm font-normal subpixel-antialiased text-bright">
-              <a
-                href="https://bitsbythebyte.pub/"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="Articles Link"
-                type="link"
-                className="block p-1 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border hover:border-light hover:rounded active:bg-darkoff active:border active:border-light active:rounded"
-              >
-                Articles
-              </a>
-            </li>
+                {dropdown?.length > 0 ? (
+                  <Slidedown id={id} category={category} dropdown={dropdown} />
+                ) : (
+                  <a
+                    href={href}
+                    target={target}
+                    rel="noreferrer noopener"
+                    aria-label="Articles Link"
+                    type="link"
+                    className="block p-1 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border hover:border-light hover:rounded active:bg-darkoff active:border active:border-light active:rounded"
+                  >
+                    {category}
+                  </a>
+                )}
+              </li>
+            ))}
           </ul>
         </section>
       ) : (
