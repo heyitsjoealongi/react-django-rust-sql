@@ -12,28 +12,35 @@ import Dropdown from "./items/Dropdown";
 
 // Middleware & Integrations -%- ////
 const tools = {
+  id: 0,
   category: "Tools",
   dropdown: [
     {
       id: 0,
       title: "Resume",
       description: "Create a digitally customizable resume",
+      href: "/",
+      target: "_self",
     },
   ],
 };
 const social = {
+  id: 1,
   category: "Social",
   dropdown: [
     {
       id: 0,
       title: "Substack",
       description: "Subscribe on Substack for the latest articles",
+      href: "https://bitsbythebyte.pub/",
+      target: "_blank",
     },
-    { id: 1, title: "X", description: "Follow on X for the latest posts" },
     {
       id: 2,
       title: "Bluesky",
       description: "Follow on Bluesky for the latest posts",
+      href: "https://bsky.app/profile/bitsbythebyte.pub",
+      target: "_blank",
     },
   ],
 };
@@ -62,23 +69,28 @@ export default function Navbar() {
             />
           </a>
           <ul className="self-center justify-self-center flex flex-row flex-nowrap space-x-4 list-none">
-            <li className="mx-auto text-sm font-normal subpixel-antialiased text-light">
-              <Dropdown category={tools?.category} dropdown={tools?.dropdown} />
-            </li>
-            <li className="mx-auto text-sm font-normal subpixel-antialiased text-light">
+            <li className="mx-auto text-sm font-normal subpixel-antialiased text-bright">
               <Dropdown
+                id={tools?.id}
+                category={tools?.category}
+                dropdown={tools?.dropdown}
+              />
+            </li>
+            <li className="mx-auto text-sm font-normal subpixel-antialiased text-bright">
+              <Dropdown
+                id={social?.id}
                 category={social?.category}
                 dropdown={social?.dropdown}
               />
             </li>
-            <li className="mx-auto text-sm font-normal subpixel-antialiased text-light">
+            <li className="mx-auto text-sm font-normal subpixel-antialiased text-bright">
               <a
                 href="https://bitsbythebyte.pub/"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="Articles Link"
                 type="link"
-                className="flex flex-row flex-nowrap justify-center items-center py-1 px-3 mx-auto text-base font-slab font-medium subpixel-antialiased text-light border border-dark rounded hover:bg-darkoff hover:border hover:border-light hover:rounded active:bg-darkoff active:border active:border-light active:rounded"
+                className="flex flex-row flex-nowrap justify-center items-center py-1 px-3 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border hover:border-light hover:rounded active:bg-darkoff active:border active:border-light active:rounded"
               >
                 Articles
               </a>

@@ -5,11 +5,14 @@ import * as React from "react";
 
 // Types -%- ////
 type DropdownProps = {
+  id: number;
   category: string;
   dropdown: {
     id: number;
     title: string;
     description: string;
+    href: string;
+    target: string;
   }[];
 };
 
@@ -21,19 +24,33 @@ type DropdownProps = {
 
 // Application -%- ////
 export default function Dropdown({
+  id,
   category,
   dropdown,
 }: Readonly<DropdownProps>) {
   const [open, toggle] = React.useState<boolean>(false);
 
+  React.useEffect(() => {
+    const handleClick = (event: any) => {
+      if (event.target?.id !== `${"dropdown" + id}`) {
+        toggle(false);
+      }
+    };
+    document.addEventListener("click", handleClick, true);
+    return () => {
+      document.removeEventListener("click", handleClick, true);
+    };
+  }, [open]);
+
   return (
     <React.Fragment>
       <div className="relative">
         <button
+          id={`${"dropdown" + id}`}
           className="flex flex-row flex-nowrap justify-center items-center py-1 px-3 mx-auto border border-dark rounded hover:bg-darkoff hover:border hover:border-light hover:rounded active:bg-darkoff active:border active:border-light active:rounded"
           onClick={() => toggle(!open)}
         >
-          <div className="pr-1 mx-auto self-center text-base font-slab font-medium subpixel-antialiased text-light">
+          <div className="pr-1 mx-auto self-center text-base font-slab font-medium subpixel-antialiased text-bright">
             {category}
           </div>
           {open === true ? (
@@ -73,23 +90,28 @@ export default function Dropdown({
           )}
         </button>
         {open === true ? (
-          <div className="absolute block w-60 mt-1 p-1 bg-darkoff border border-light rounded">
-            <ul className="block w-auto flex flex-col flex-wrap mx-auto list-none">
-              {dropdown?.map(({ id, title, description }) => (
-                <li className="m-1" key={id}>
+          <div className="absolute block w-60 mt-1 p-1 bg-dark border border-light rounded">
+            <ul className="block w-auto flex flex-col flex-wrap mx-auto list-none ">
+              {dropdown?.map(({ id, title, description, href, target }) => (
+                <li
+                  className="p-1 hover:bg-darkoff hover:rounded  active:bg-darkoff active:rounded"
+                  key={id}
+                >
                   <a
-                    href="/"
-                    target="_self"
+                    href={href}
+                    target={target}
                     rel="noreferrer noopener"
                     aria-label="Resume Link"
                     type="link"
-                    className="block mx-auto text-base font-roboto font-medium subpixel-antialiased text-light"
+                    className="block mx-auto"
                   >
-                    {title}
+                    <span className="block text-base font-roboto font-medium subpixel-antialiased text-bright">
+                      {title}
+                    </span>
+                    <span className="block text-sm font-roboto font-light subpixel-antialiased text-bright">
+                      {description}
+                    </span>
                   </a>
-                  <span className="text-sm font-roboto font-light subpixel-antialiased text-light">
-                    {description}
-                  </span>
                 </li>
               ))}
             </ul>
