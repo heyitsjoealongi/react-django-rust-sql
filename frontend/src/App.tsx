@@ -21,19 +21,17 @@ function App() {
 
   return (
     <React.Fragment>
-      <div className="bitsbythebyte">
-        <main className="flex flex-col flex-wrap justify-between mx-auto">
-          <Navbar />
-          {/* <div className="container" style={{ padding: "50px 0 100px 0" }}>
+      <main className="flex flex-col h-auto min-h-screen w-full">
+        <Navbar />
+        {/* <div className="container" style={{ padding: "50px 0 100px 0" }}>
         {!session ? (
           <Auth />
         ) : (
           <Account key={session.user.id} session={session} />
         )}
       </div> */}
-          <Footer />
-        </main>
-      </div>
+        <Footer />
+      </main>
     </React.Fragment>
   );
 }
