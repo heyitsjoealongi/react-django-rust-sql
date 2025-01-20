@@ -2,13 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
 body,
-#bitsbythebyte,
-main {
-  height: 100vh;
-  width: 100vw;
+html {
   color: #eb2525;
   background-color: #170202;
-  overflow-x: hidden;
 }

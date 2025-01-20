@@ -24,7 +24,7 @@ const year = () => {
 export default function Footer() {
   return (
     <React.Fragment>
-      <footer className="p-3 border-t border-light">
+      <footer className="block mt-auto p-3 border-t border-light">
         <section className="flex flex-col lg:flex-row flex-nowrap justify-between items-center">
           <a
             href="/"
