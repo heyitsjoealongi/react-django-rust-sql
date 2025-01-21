@@ -40,7 +40,7 @@ export default function Dropdown({
     return () => {
       document.removeEventListener("click", handleClick, true);
     };
-  }, [open]);
+  }, [id, open]);
 
   return (
     <React.Fragment>
