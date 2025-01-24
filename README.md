@@ -4,28 +4,30 @@ A collection of tools and services for the cyberspace all-in-one application.
 
 ## React
 
-npx create-react-app my-app --template typescript
+npx create-react-app frontend --template typescript
+
+cd frontend
+
+npm install
+
+npm start
 
 ## Python
 
+django-admin startproject mysite backend
+
+cd backend
+
 python -m venv .venv
 
-.venv\Scripts\Activate.ps1
-
-Get-Command python
+python -m pip install Django
 
 python -m pip install --upgrade pip
 
-echo "\*" > .venv/.gitignore
-
-pip install "fastapi[standard]"
-
-fastapi dev main.py
-
----
-
-pip freeze > requirements.txt || pip install pipreqs
+pip freeze > requirements.txt
 
 pip install -r requirements.txt
 
 python -m pip check
+
+python manage.py runserver
