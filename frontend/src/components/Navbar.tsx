@@ -4,25 +4,12 @@ import * as React from "react";
 // Packages -%- ////
 
 // Types -%- ////
-// type DropdownProps = {
-//   id: number;
-//   category: string;
-//   href: string;
-//   target: string;
-//   dropdown: {
-//     id: number;
-//     title: string;
-//     description: string;
-//     href: string;
-//     target: string;
-//   }[];
-// };
 
 // System Components -%- ////
 
 // Components -%- ////
-import Dropdown from "./items/Dropdown";
-import Slidedown from "./items/Slidedown";
+import Dropdown from "./menus/Dropdown";
+import Slidedown from "./menus/Slidedown";
 
 // Middleware & Integrations -%- ////
 const links = [
@@ -35,7 +22,7 @@ const links = [
       {
         id: 0,
         title: "Resume",
-        description: "Create a digitally customizable resume",
+        description: "Create a digitally customizable resume to share",
         href: "/",
         target: "_self",
       },
@@ -55,10 +42,17 @@ const links = [
         target: "_blank",
       },
       {
+        id: 1,
+        title: "X",
+        description: "Follow on X for the latest trends in secure computing",
+        href: "https://x.com/bitsbythebyte",
+        target: "_blank",
+      },
+      {
         id: 2,
-        title: "Bluesky",
-        description: "Follow on Bluesky for the latest posts",
-        href: "https://bsky.app/profile/bitsbythebyte.pub",
+        title: "Discord",
+        description: "Join the community and chat about cybersecurity",
+        href: "https://discord.gg/J8dkx7jKem",
         target: "_blank",
       },
     ],

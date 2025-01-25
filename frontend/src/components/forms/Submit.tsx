@@ -6,13 +6,13 @@ import { useFormik } from "formik";
 import { useSelector } from "react-redux";
 
 // Types -%- ////
+import type { RootState } from "../../redux/store";
 
 // System Components -%- ////
 
 // Components -%- ////
 
 // Middleware & Integrations -%- ////
-import type { RootState } from "../../redux/store";
 
 // Application -%- ////
 export default function Personal() {
