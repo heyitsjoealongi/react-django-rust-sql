@@ -3,6 +3,7 @@ import React from "react";
 
 // Packages -%- ////
 import { useFormik } from "formik";
+import { useSelector } from "react-redux";
 
 // Types -%- ////
 
@@ -11,15 +12,16 @@ import { useFormik } from "formik";
 // Components -%- ////
 
 // Middleware & Integrations -%- ////
+import type { RootState } from "../../redux/store";
 
 // Application -%- ////
 export default function Personal() {
+  const form = useSelector((state: RootState) => state.counter.value);
+
   const formik = useFormik({
-    initialValues: {
-      pitch: "",
-    },
+    initialValues: {},
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      alert(JSON.stringify(form, null, 2));
     },
   });
   return (

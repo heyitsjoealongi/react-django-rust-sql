@@ -3,6 +3,7 @@ import React from "react";
 
 // Packages -%- ////
 import { useFormik } from "formik";
+import { useDispatch } from "react-redux";
 
 // Types -%- ////
 
@@ -11,9 +12,12 @@ import { useFormik } from "formik";
 // Components -%- ////
 
 // Middleware & Integrations -%- ////
+import { introduction } from "../../redux/slices/formSlice";
 
 // Application -%- ////
-export default function Personal(handleSubmit: any) {
+export default function Personal() {
+  const dispatch = useDispatch();
+
   const formik = useFormik({
     initialValues: {
       pitch: "",
@@ -22,8 +26,8 @@ export default function Personal(handleSubmit: any) {
   });
 
   React.useEffect(() => {
-    return handleSubmit(formik.values);
-  }, []);
+    dispatch(introduction(formik?.values));
+  }, [dispatch, formik?.values]);
 
   return (
     <React.Fragment>
@@ -47,7 +51,7 @@ export default function Personal(handleSubmit: any) {
             rows={6}
             cols={66}
             onChange={formik.handleChange}
-            value={formik.values.pitch}
+            value={formik?.values?.pitch}
             className="block p-3 font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
           />
         </form>

@@ -16,13 +16,7 @@ import Submit from "./forms/Submit";
 
 // Application -%- ////
 export default function Form() {
-  const [data, setData] = React.useState("");
-
-  const handleSubmit = (values: any) => {
-    setData(values);
-    console.log("---data", data);
-    alert(JSON.stringify(data, null, 2));
-  };
+  // const [data, setData] = React.useState("");
 
   return (
     <React.Fragment>

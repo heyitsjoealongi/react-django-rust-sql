@@ -3,6 +3,7 @@ import React from "react";
 
 // Packages -%- ////
 import { useFormik } from "formik";
+import { useDispatch } from "react-redux";
 
 // Types -%- ////
 
@@ -11,9 +12,12 @@ import { useFormik } from "formik";
 // Components -%- ////
 
 // Middleware & Integrations -%- ////
+import { personal } from "../../redux/slices/formSlice";
 
 // Application -%- ////
-export default function Personal(handleSubmit: any) {
+export default function Personal() {
+  const dispatch = useDispatch();
+
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -25,8 +29,8 @@ export default function Personal(handleSubmit: any) {
   });
 
   React.useEffect(() => {
-    return handleSubmit(formik.values);
-  }, []);
+    dispatch(personal(formik?.values));
+  }, [dispatch, formik?.values]);
 
   return (
     <React.Fragment>
@@ -49,7 +53,7 @@ export default function Personal(handleSubmit: any) {
             name="firstName"
             type="text"
             onChange={formik.handleChange}
-            value={formik.values.firstName}
+            value={formik?.values?.firstName}
             className="block p-3 font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
           />
           <label
@@ -63,7 +67,7 @@ export default function Personal(handleSubmit: any) {
             name="lastName"
             type="text"
             onChange={formik.handleChange}
-            value={formik.values.lastName}
+            value={formik?.values?.lastName}
             className="block p-3 font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
           />
           <label
@@ -77,7 +81,7 @@ export default function Personal(handleSubmit: any) {
             name="phone"
             type="tel"
             onChange={formik.handleChange}
-            value={formik.values.phone}
+            value={formik?.values?.phone}
             className="block p-3 font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
           />
           <label
@@ -91,7 +95,7 @@ export default function Personal(handleSubmit: any) {
             name="email"
             type="email"
             onChange={formik.handleChange}
-            value={formik.values.email}
+            value={formik?.values?.email}
             className="block p-3 font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
           />
         </form>
