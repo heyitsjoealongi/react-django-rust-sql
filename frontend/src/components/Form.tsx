@@ -16,8 +16,6 @@ import Submit from "./forms/Submit";
 
 // Application -%- ////
 export default function Form() {
-  // const [data, setData] = React.useState("");
-
   return (
     <React.Fragment>
       <article className="block min-w-auto max-w-auto lg:min-w-[30vw] my-9 lg:my-[18vh] mx-9 lg:mx-auto border border-darkoff rounded-xl bg-darkoff border-opacity-[.13] bg-opacity-[.13]">
