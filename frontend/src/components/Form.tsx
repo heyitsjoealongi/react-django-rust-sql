@@ -8,6 +8,7 @@ import * as React from "react";
 // System Components -%- ////
 
 // Components -%- ////
+import Layout from "./Layout";
 import Personal from "./forms/Personal";
 import Introduction from "./forms/Introduction";
 import Submit from "./forms/Submit";
@@ -18,11 +19,11 @@ import Submit from "./forms/Submit";
 export default function Form() {
   return (
     <React.Fragment>
-      <article className="block min-w-auto max-w-auto lg:min-w-[30vw] my-9 lg:my-[18vh] mx-9 lg:mx-auto border border-darkoff rounded-xl bg-darkoff border-opacity-[.13] bg-opacity-[.13]">
+      <Layout>
         <Personal />
         <Introduction />
         <Submit />
-      </article>
+      </Layout>
     </React.Fragment>
   );
 }
