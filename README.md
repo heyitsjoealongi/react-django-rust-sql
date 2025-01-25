@@ -14,6 +14,14 @@ npm start
 
 ## Python
 
+python -m django --version
+
+django-admin startproject backend
+
+python -m venv ~/.venvs/django
+
+python -m venv ~/.venvs/django
+
 django-admin startproject backend
 
 cd backend
