@@ -1,11 +1,23 @@
+// React -%- ////
 import * as React from "react";
 // import { supabase } from "./supabaseClient";
 // import Auth from "./Auth";
 // import Account from "./Account";
 
+// Packages -%- ////
+
+// Types -%- ////
+
+// System Components -%- ////
+
+// Components -%- ////
 import Navbar from "./components/Navbar";
+import Form from "./components/Form";
 import Footer from "./components/Footer";
 
+// Middleware & Integrations -%- ////
+
+// Application -%- ////
 function App() {
   // const [session, setSession] = React.useState<any>(null);
 
@@ -30,6 +42,7 @@ function App() {
           <Account key={session.user.id} session={session} />
         )}
       </div> */}
+        <Form />
         <Footer />
       </main>
     </React.Fragment>

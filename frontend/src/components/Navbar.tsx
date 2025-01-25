@@ -71,46 +71,6 @@ const links = [
     dropdown: [],
   },
 ];
-const tools = {
-  id: 0,
-  category: "Tools",
-  dropdown: [
-    {
-      id: 0,
-      title: "Resume",
-      description: "Create a digital resume",
-      href: "/",
-      target: "_self",
-    },
-  ],
-};
-const social = {
-  id: 1,
-  category: "Social",
-  dropdown: [
-    {
-      id: 0,
-      title: "Substack",
-      description: "Subscribe to the publication",
-      href: "https://bitsbythebyte.pub/",
-      target: "_blank",
-    },
-    {
-      id: 2,
-      title: "X",
-      description: "Follow on X for the latest posts",
-      href: "https://x.com/bitsbythebyte",
-      target: "_blank",
-    },
-    {
-      id: 2,
-      title: "Discord",
-      description: "Join the community and chat",
-      href: "https://discord.gg/J8dkx7jKem",
-      target: "_blank",
-    },
-  ],
-};
 
 // Application -%- ////
 export default function Navbar() {
@@ -138,32 +98,27 @@ export default function Navbar() {
             />
           </a>
           <ul className="hidden self-center justify-self-center lg:flex flex-row flex-nowrap space-x-4 list-none">
-            <li className="mx-auto text-sm font-normal subpixel-antialiased text-bright">
-              <Dropdown
-                id={tools?.id}
-                category={tools?.category}
-                dropdown={tools?.dropdown}
-              />
-            </li>
-            <li className="mx-auto text-sm font-normal subpixel-antialiased text-bright">
-              <Dropdown
-                id={social?.id}
-                category={social?.category}
-                dropdown={social?.dropdown}
-              />
-            </li>
-            <li className="mx-auto text-sm font-normal subpixel-antialiased text-bright">
-              <a
-                href="https://bitsbythebyte.pub/"
-                target="_blank"
-                rel="noreferrer noopener"
-                aria-label="Articles Link"
-                type="link"
-                className="flex flex-row flex-nowrap justify-center items-center py-1 px-3 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border hover:border-light hover:rounded active:bg-darkoff active:border active:border-light active:rounded"
+            {links?.map(({ id, category, href, target, dropdown }) => (
+              <li
+                className="mx-auto text-sm font-normal subpixel-antialiased text-bright"
+                key={id}
               >
-                Articles
-              </a>
-            </li>
+                {dropdown?.length > 0 ? (
+                  <Dropdown id={id} category={category} dropdown={dropdown} />
+                ) : (
+                  <a
+                    href={href}
+                    target={target}
+                    rel="noreferrer noopener"
+                    aria-label="Articles Link"
+                    type="link"
+                    className="flex flex-row flex-nowrap justify-center items-center py-1 px-3 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border-light active:bg-darkoff active:border-light"
+                  >
+                    {category}
+                  </a>
+                )}
+              </li>
+            ))}
           </ul>
           <ul className="hidden self-center justify-self-end lg:flex flex-row flex-nowrap space-x-4 list-none">
             <li className="mx-auto text-sm font-normal subpixel-antialiased text-light">
@@ -238,7 +193,7 @@ export default function Navbar() {
                     rel="noreferrer noopener"
                     aria-label="Articles Link"
                     type="link"
-                    className="block p-1 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border hover:border-light hover:rounded active:bg-darkoff active:border active:border-light active:rounded"
+                    className="block p-1 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border hover:border-light active:bg-darkoff active:border active:border-light"
                   >
                     {category}
                   </a>
