@@ -20,7 +20,7 @@ cd backend
 
 python -m venv .venv
 
-python -m pip install Django
+python -m pip install django gunicorn psycopg2-binary dj-database-url
 
 python -m pip install --upgrade pip
 
