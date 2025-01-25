@@ -14,13 +14,15 @@ npm start
 
 ## Python
 
-django-admin startproject mysite backend
+django-admin startproject backend
 
 cd backend
 
-python -m venv .venv
+python manage.py runserver
 
-python -m pip install django gunicorn psycopg2-binary dj-database-url
+python manage.py migrate
+
+python -m venv .venv
 
 python -m pip install --upgrade pip
 
