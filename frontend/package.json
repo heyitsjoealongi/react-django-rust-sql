@@ -5,6 +5,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.47.15",
     "cra-template-typescript": "1.2.0",
+    "formik": "^2.4.6",
     "frontend": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

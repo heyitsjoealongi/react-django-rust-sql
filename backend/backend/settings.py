@@ -14,7 +14,8 @@ from django.core.management.utils import get_random_secret_key
 from pathlib import Path
 import os
 import sys
-import dj_database_url
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -86,10 +87,17 @@ if DEVELOPMENT_MODE is True:
         }
     }
 elif len(sys.argv) > 0 and sys.argv[1] != 'collectstatic':
-    if os.getenv("DATABASE_URL", None) is None:
-        raise Exception("DATABASE_URL environment variable not defined")
+    if os.getenv("DBNAME", None) is None:
+        raise Exception("DBNAME environment variable not defined")
     DATABASES = {
-        "default": dj_database_url.parse(os.environ.get("DATABASE_URL")),
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.getenv("DBNAME"),
+            'USER': os.getenv("USER"),
+            'PASSWORD': os.getenv("PASSWORD"),
+            'HOST': os.getenv("HOST"),
+            'PORT': os.getenv("PORT"),
+        }
     }
 
 
@@ -129,8 +137,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-# STATIC_URL = "/static/"
-# STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_URL = "/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Uncomment if you have extra static files and a directory in your GitHub repo.
 # If you don't have this directory and have this uncommented your build will fail
