@@ -39,12 +39,12 @@ export default function Personal() {
           onSubmit={formik.handleSubmit}
           className="flex flex-col flex-nowrap justify-center my-9 p-9"
         >
-          <h3 className="block py-1 px-3 my-3 mx-auto text-3xl font-slab font-medium subpixel-antialiased text-light">
+          <h3 className="block my-3 font-slab text-3xl font-medium subpixel-antialiased text-light">
             Personal
           </h3>
           <label
             htmlFor="firstName"
-            className="block py-1 px-3 my-3 mx-auto text-lg font-normal subpixel-antialiased text-bright"
+            className="block my-3 font-roboto text-lg font-normal subpixel-antialiased text-bright"
           >
             First Name
           </label>
@@ -54,11 +54,11 @@ export default function Personal() {
             type="text"
             onChange={formik.handleChange}
             value={formik?.values?.firstName}
-            className="block p-3 font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
+            className="block p-3 font-roboto font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
           />
           <label
             htmlFor="lastName"
-            className="block py-1 px-3 my-3 mx-auto text-lg font-normal subpixel-antialiased text-bright"
+            className="block my-3 font-roboto text-lg font-normal subpixel-antialiased text-bright"
           >
             Last Name
           </label>
@@ -68,11 +68,11 @@ export default function Personal() {
             type="text"
             onChange={formik.handleChange}
             value={formik?.values?.lastName}
-            className="block p-3 font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
+            className="block p-3 font-roboto font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
           />
           <label
             htmlFor="phone"
-            className="block py-1 px-3 my-3 mx-auto text-lg font-normal subpixel-antialiased text-bright"
+            className="block my-3 font-roboto text-lg font-normal subpixel-antialiased text-bright"
           >
             Phone Number
           </label>
@@ -82,11 +82,11 @@ export default function Personal() {
             type="tel"
             onChange={formik.handleChange}
             value={formik?.values?.phone}
-            className="block p-3 font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
+            className="block p-3 font-roboto font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
           />
           <label
             htmlFor="email"
-            className="block py-1 px-3 my-3 mx-auto text-lg font-normal subpixel-antialiased text-bright"
+            className="block my-3 font-roboto text-lg font-normal subpixel-antialiased text-bright"
           >
             Email Address
           </label>
@@ -96,7 +96,7 @@ export default function Personal() {
             type="email"
             onChange={formik.handleChange}
             value={formik?.values?.email}
-            className="block p-3 font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
+            className="block p-3 font-roboto font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
           />
         </form>
       </section>

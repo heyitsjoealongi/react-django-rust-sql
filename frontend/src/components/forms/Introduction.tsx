@@ -31,17 +31,17 @@ export default function Personal() {
 
   return (
     <React.Fragment>
-      <section className="block h-auto w-auto">
+      <section className="block h-auto w-full">
         <form
           onSubmit={formik.handleSubmit}
           className="flex flex-col flex-nowrap justify-center my-9 p-9"
         >
-          <h3 className="block py-1 px-3 my-3 mx-auto text-3xl font-slab font-medium subpixel-antialiased text-light">
+          <h3 className="block my-3 font-slab text-3xl font-medium subpixel-antialiased text-light">
             Introduction
           </h3>
           <label
             htmlFor="pitch"
-            className="block py-1 px-3 my-3 mx-auto text-lg font-normal subpixel-antialiased text-bright"
+            className="block my-3 font-roboto text-lg font-normal subpixel-antialiased text-bright"
           >
             Your pitch
           </label>
@@ -52,7 +52,7 @@ export default function Personal() {
             cols={66}
             onChange={formik.handleChange}
             value={formik?.values?.pitch}
-            className="block p-3 font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
+            className="block p-3 font-roboto font-normal subpixel-antialiased text-bright border border-light rounded bg-transparent"
           />
         </form>
       </section>

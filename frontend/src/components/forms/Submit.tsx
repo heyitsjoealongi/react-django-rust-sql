@@ -33,7 +33,7 @@ export default function Personal() {
         >
           <button
             type="submit"
-            className="block w-full p-3 mx-auto text-2xl uppercase font-bold subpixel-antialiased text-light border border-darkoff rounded bg-darkoff hover:text-darkoff hover:bg-light hover:border-light active:text-light active:bg-darkoff active:border-light"
+            className="block w-full p-3 mx-auto font-slab uppercase text-xl lg:text-2xl font-bold subpixel-antialiased text-darkoff border border-light rounded bg-light hover:text-light hover:bg-darkoff hover:border-light active:text-light active:bg-darkoff active:border-light"
           >
             Submit
           </button>

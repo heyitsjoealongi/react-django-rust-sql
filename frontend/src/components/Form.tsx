@@ -6,9 +6,9 @@ import * as React from "react";
 // Types -%- ////
 
 // System Components -%- ////
+import Layout from "./Layout";
 
 // Components -%- ////
-import Layout from "./Layout";
 import Personal from "./forms/Personal";
 import Introduction from "./forms/Introduction";
 import Submit from "./forms/Submit";

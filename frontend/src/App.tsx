@@ -12,6 +12,7 @@ import * as React from "react";
 
 // Components -%- ////
 import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
 
@@ -35,6 +36,7 @@ function App() {
     <React.Fragment>
       <main className="flex flex-col h-auto min-h-screen w-full">
         <Navbar />
+        <Header />
         {/* <div className="container" style={{ padding: "50px 0 100px 0" }}>
         {!session ? (
           <Auth />
