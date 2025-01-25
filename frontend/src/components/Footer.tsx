@@ -24,8 +24,8 @@ const year = () => {
 export default function Footer() {
   return (
     <React.Fragment>
-      <footer className="block mt-auto p-3 border-t border-light">
-        <section className="flex flex-col lg:flex-row flex-nowrap justify-between items-center">
+      <footer className="block p-3 mt-9 border-t border-light">
+        <section className="flex flex-col min-[2000px]:flex-row flex-nowrap justify-between items-center">
           <a
             href="/"
             target="_self"
@@ -43,7 +43,7 @@ export default function Footer() {
               className="mx-auto"
             />
           </a>
-          <p className="self-center justify-self-center my-3 lg:my-0 text-sm font-normal subpixel-antialiased text-light">
+          <p className="self-center justify-self-center my-3 min-[2000px]:my-0 text-sm font-normal subpixel-antialiased text-light">
             Copyright © {year()} Bits by the Byte. All rights reserved.
           </p>
           <ul className="self-center justify-self-end flex flex-row flex-nowrap items-center list-none">

@@ -72,7 +72,7 @@ export default function Navbar() {
 
   return (
     <React.Fragment>
-      <header className="block p-3 border-b border-light">
+      <header className="block p-3 mb-9 border-b border-light">
         <section className="flex flex-row flex-nowrap justify-between items-center">
           <a
             href="/"
@@ -91,7 +91,7 @@ export default function Navbar() {
               className=""
             />
           </a>
-          <ul className="hidden self-center justify-self-center lg:flex flex-row flex-nowrap space-x-4 list-none">
+          <ul className="hidden self-center justify-self-center min-[2000px]:flex flex-row flex-nowrap space-x-4 list-none">
             {links?.map(({ id, category, href, target, dropdown }) => (
               <li
                 className="mx-auto text-sm font-normal subpixel-antialiased text-bright"
@@ -114,7 +114,7 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <ul className="hidden self-center justify-self-end lg:flex flex-row flex-nowrap space-x-4 list-none">
+          <ul className="hidden self-center justify-self-end min-[2000px]:flex flex-row flex-nowrap space-x-4 list-none">
             <li className="mx-auto text-sm font-normal subpixel-antialiased text-light">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +149,7 @@ export default function Navbar() {
             </li>
           </ul>
           <button
-            className="lg:hidden self-center justify-self-end flex flex-row flex-nowrap space-x-4 list-none"
+            className="min-[2000px]:hidden self-center justify-self-end flex flex-row flex-nowrap space-x-4 list-none"
             onClick={() => toggle(!open)}
           >
             <svg
@@ -171,7 +171,7 @@ export default function Navbar() {
         </section>
       </header>
       {open === true ? (
-        <section className="lg:hidden block w-full p-3 bg-dark border border-light">
+        <section className="min-[2000px]:hidden block w-full p-3 bg-dark border border-light">
           <ul className="flex flex-col flex-nowrap p-1 list-none">
             {links?.map(({ id, category, href, target, dropdown }) => (
               <li
