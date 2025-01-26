@@ -7,3 +7,7 @@ html {
   color: #eb2525;
   background-color: #170202;
 }
+
+::selection {
+  background: rgba(235, 37, 37, 0.09);
+}

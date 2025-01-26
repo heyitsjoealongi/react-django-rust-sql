@@ -2,6 +2,7 @@
 import * as React from "react";
 
 // Packages -%- ////
+import { NavLink } from "react-router";
 
 // Types -%- ////
 
@@ -24,13 +25,14 @@ const year = () => {
 export default function Footer() {
   return (
     <React.Fragment>
-      <footer className="block p-3 mt-9 border-t border-light">
+      <div className="mt-9"></div>
+      <footer className="block p-3 mt-auto border-t border-light">
         <section className="flex flex-col min-[2000px]:flex-row flex-nowrap justify-between items-center">
-          <a
-            href="/"
+          <NavLink
+            to="/"
             target="_self"
             rel="noreferrer noopener"
-            aria-label="Community Link"
+            aria-label="Home Page Link"
             type="link"
             className="self-center justify-self-start"
           >
@@ -42,22 +44,22 @@ export default function Footer() {
               alt="Logo"
               className="mx-auto"
             />
-          </a>
+          </NavLink>
           <p className="self-center justify-self-center my-3 min-[2000px]:my-0 text-sm font-normal subpixel-antialiased text-light">
             Copyright © {year()} Bits by the Byte. All rights reserved.
           </p>
           <ul className="self-center justify-self-end flex flex-row flex-nowrap items-center list-none">
             <li className="mx-auto text-sm font-normal subpixel-antialiased text-light">
-              <a
-                href="/"
+              <NavLink
+                to="/privacy"
                 target="_self"
                 rel="noreferrer noopener"
-                aria-label="Community Link"
+                aria-label="Privacy Policy Link"
                 type="link"
                 className=""
               >
                 Privacy Policy
-              </a>
+              </NavLink>
             </li>
           </ul>
         </section>

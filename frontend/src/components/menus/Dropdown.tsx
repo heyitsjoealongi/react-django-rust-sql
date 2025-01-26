@@ -2,6 +2,7 @@
 import * as React from "react";
 
 // Packages -%- ////
+import { NavLink } from "react-router";
 
 // Types -%- ////
 type DropdownProps = {
@@ -97,11 +98,11 @@ export default function Dropdown({
                   className="p-1 hover:bg-darkoff hover:rounded  active:bg-darkoff active:rounded"
                   key={id}
                 >
-                  <a
-                    href={href}
+                  <NavLink
+                    to={href}
                     target={target}
                     rel="noreferrer noopener"
-                    aria-label="Resume Link"
+                    aria-label="Navbar Link"
                     type="link"
                     className="block mx-auto"
                   >
@@ -111,7 +112,7 @@ export default function Dropdown({
                     <span className="block text-sm font-roboto font-light subpixel-antialiased text-bright">
                       {description}
                     </span>
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>

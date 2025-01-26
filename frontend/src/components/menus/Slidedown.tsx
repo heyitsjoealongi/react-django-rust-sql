@@ -2,6 +2,7 @@
 import * as React from "react";
 
 // Packages -%- ////
+import { NavLink } from "react-router";
 
 // Types -%- ////
 type SlidedownProps = {
@@ -97,11 +98,11 @@ export default function Dropdown({
                   className="text-sm font-normal subpixel-antialiased text-bright "
                   key={id}
                 >
-                  <a
-                    href={href}
+                  <NavLink
+                    to={href}
                     target={target}
                     rel="noreferrer noopener"
-                    aria-label="Resume Link"
+                    aria-label="Mobile Navbar Link"
                     type="link"
                     className="block p-1 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border hover:border-light hover:rounded active:bg-darkoff active:border active:border-light active:rounded"
                   >
@@ -111,7 +112,7 @@ export default function Dropdown({
                     <span className="block text-sm font-roboto font-light subpixel-antialiased text-bright">
                       {description}
                     </span>
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>

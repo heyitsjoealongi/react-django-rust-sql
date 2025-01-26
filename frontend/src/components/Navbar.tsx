@@ -2,6 +2,7 @@
 import * as React from "react";
 
 // Packages -%- ////
+import { NavLink } from "react-router";
 
 // Types -%- ////
 
@@ -23,7 +24,7 @@ const links = [
         id: 0,
         title: "Resume",
         description: "Create a digitally customizable resume to share",
-        href: "/",
+        href: "/resume",
         target: "_self",
       },
     ],
@@ -72,13 +73,13 @@ export default function Navbar() {
 
   return (
     <React.Fragment>
-      <header className="block p-3 mb-9 border-b border-light">
+      <header className="block p-3 border-b border-light">
         <section className="flex flex-row flex-nowrap justify-between items-center">
-          <a
-            href="/"
+          <NavLink
+            to="/"
             target="_self"
             rel="noreferrer noopener"
-            aria-label="Community Link"
+            aria-label="Home Page Link"
             type="link"
             className="self-center justify-self-start"
           >
@@ -88,9 +89,9 @@ export default function Navbar() {
               width={30}
               height={30}
               alt="Logo"
-              className=""
+              className="mx-auto"
             />
-          </a>
+          </NavLink>
           <ul className="hidden self-center justify-self-center min-[2000px]:flex flex-row flex-nowrap space-x-4 list-none">
             {links?.map(({ id, category, href, target, dropdown }) => (
               <li
@@ -199,6 +200,7 @@ export default function Navbar() {
       ) : (
         <></>
       )}
+      <div className="mt-9"></div>
     </React.Fragment>
   );
 }

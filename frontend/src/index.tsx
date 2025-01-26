@@ -4,6 +4,7 @@ import ReactDOM from "react-dom/client";
 
 // Packages -%- ////
 import { Provider } from "react-redux";
+import { BrowserRouter, Routes, Route } from "react-router";
 
 // Types -%- ////
 
@@ -12,7 +13,10 @@ import App from "./App";
 import "./input.css";
 
 // Components -%- ////
-// import reportWebVitals from "./reportWebVitals";
+import HomePage from "./pages/Home";
+import PrivacyPage from "./pages/Privacy";
+import ResumePage from "./pages/Resume";
+import AccountPage from "./pages/Account";
 
 // Middleware & Integrations -%- ////
 import { store } from "./redux/store";
@@ -24,7 +28,42 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <App>
+                <HomePage />
+              </App>
+            }
+          />
+          <Route
+            path="/privacy"
+            element={
+              <App>
+                <PrivacyPage />
+              </App>
+            }
+          />
+          <Route
+            path="/resume"
+            element={
+              <App>
+                <ResumePage />
+              </App>
+            }
+          />
+          <Route
+            path="/account"
+            element={
+              <App>
+                <AccountPage />
+              </App>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>
 );
