@@ -1,5 +1,5 @@
 // React -%- ////
-import React from "react";
+import * as React from "react";
 
 // Packages -%- ////
 import { useFormik } from "formik";
@@ -15,7 +15,7 @@ import { useDispatch } from "react-redux";
 import { personal } from "../../redux/slices/formSlice";
 
 // Application -%- ////
-export default function Personal() {
+export default function PersonalForm() {
   const dispatch = useDispatch();
 
   const formik = useFormik({

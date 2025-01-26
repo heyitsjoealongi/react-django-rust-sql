@@ -1,9 +1,23 @@
-import { configureStore } from "@reduxjs/toolkit";
-import formReducer from "./slices/formSlice";
+// React -%- ////
 
+// Packages -%- ////
+import { configureStore } from "@reduxjs/toolkit";
+
+// Types -%- ////
+
+// System Components -%- ////
+
+// Components -%- ////
+
+// Middleware & Integrations -%- ////
+import formReducer from "./slices/formSlice";
+import authReducer from "./slices/authSlice";
+
+// Application -%- ////
 export const store = configureStore({
   reducer: {
-    counter: formReducer,
+    form: formReducer,
+    auth: authReducer,
   },
 });
 

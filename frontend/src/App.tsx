@@ -1,8 +1,5 @@
 // React -%- ////
 import * as React from "react";
-// import { supabase } from "./supabaseClient";
-// import Auth from "./Auth";
-// import Account from "./Account";
 
 // Packages -%- ////
 
@@ -15,20 +12,33 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 // Middleware & Integrations -%- ////
+// import { token } from "./redux/slices/authSlice";
+import { supabase } from "./supabase/supabase";
 
 // Application -%- ////
 function App({ children }: any) {
-  // const [session, setSession] = React.useState<any>(null);
+  React.useEffect(() => {
+    const { data } = supabase.auth.onAuthStateChange((event, session) => {
+      console.log(event, session);
 
-  // React.useEffect(() => {
-  //   supabase.auth.getSession().then(({ data: { session } }: any) => {
-  //     setSession(session);
-  //   });
+      if (event === "INITIAL_SESSION") {
+        // handle initial session
+      } else if (event === "SIGNED_IN") {
+        // handle sign in event
+      } else if (event === "SIGNED_OUT") {
+        // handle sign out event
+      } else if (event === "PASSWORD_RECOVERY") {
+        // handle password recovery event
+      } else if (event === "TOKEN_REFRESHED") {
+        // handle token refreshed event
+      } else if (event === "USER_UPDATED") {
+        // handle user updated event
+      }
+    });
 
-  //   supabase.auth.onAuthStateChange((_event: any, session: any) => {
-  //     setSession(session);
-  //   });
-  // }, []);
+    // call unsubscribe to remove the callback
+    data.subscription.unsubscribe();
+  }, []);
 
   return (
     <React.Fragment>

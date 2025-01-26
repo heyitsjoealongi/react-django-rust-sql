@@ -16,6 +16,8 @@ import "./input.css";
 import HomePage from "./pages/Home";
 import PrivacyPage from "./pages/Privacy";
 import ResumePage from "./pages/Resume";
+import SignupPage from "./pages/Signup";
+import LogonPage from "./pages/Logon";
 import AccountPage from "./pages/Account";
 
 // Middleware & Integrations -%- ////
@@ -51,6 +53,22 @@ root.render(
             element={
               <App>
                 <ResumePage />
+              </App>
+            }
+          />
+          <Route
+            path="/signup"
+            element={
+              <App>
+                <SignupPage />
+              </App>
+            }
+          />
+          <Route
+            path="/logon"
+            element={
+              <App>
+                <LogonPage />
               </App>
             }
           />

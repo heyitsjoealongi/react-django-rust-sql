@@ -16,7 +16,9 @@ import Header from "../components/Header";
 export default function AccountPage() {
   return (
     <React.Fragment>
-      <Header />
+      <React.Fragment>
+        <Header />
+      </React.Fragment>
     </React.Fragment>
   );
 }

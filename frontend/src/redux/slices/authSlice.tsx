@@ -9,8 +9,6 @@ type FormState = {
   value: {
     signup: {};
     logon: {};
-    personal: {};
-    introduction: {};
   };
 };
 
@@ -23,8 +21,6 @@ const initialState: FormState = {
   value: {
     signup: {},
     logon: {},
-    personal: {},
-    introduction: {},
   },
 };
 
@@ -34,8 +30,8 @@ const initialState: FormState = {
 // doesn't actually mutate the state because it uses the Immer library,
 // which detects changes to a "draft state" and produces a brand new
 // immutable state based off those changes
-export const formSlice = createSlice({
-  name: "form",
+export const authenticationSlice = createSlice({
+  name: "auth",
   initialState,
   reducers: {
     signup: (state, action: PayloadAction<object>) => {
@@ -44,15 +40,9 @@ export const formSlice = createSlice({
     logon: (state, action: PayloadAction<object>) => {
       state.value.logon = action.payload;
     },
-    personal: (state, action: PayloadAction<object>) => {
-      state.value.personal = action.payload;
-    },
-    introduction: (state, action: PayloadAction<object>) => {
-      state.value.introduction = action.payload;
-    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { signup, logon, personal, introduction } = formSlice.actions;
-export default formSlice.reducer;
+export const { signup, logon } = authenticationSlice.actions;
+export default authenticationSlice.reducer;

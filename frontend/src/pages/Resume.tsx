@@ -8,9 +8,9 @@ import * as React from "react";
 // System Components -%- ////
 
 // Components -%- ////
-import Personal from "../components/forms/Personal";
-import Introduction from "../components/forms/Introduction";
-import Submit from "../components/forms/Submit";
+import PersonalForm from "../components/forms/Personal";
+import IntroductionForm from "../components/forms/Introduction";
+import SubmitForm from "../components/forms/Submit";
 
 // Middleware & Integrations -%- ////
 
@@ -18,9 +18,9 @@ import Submit from "../components/forms/Submit";
 export default function ResumePage() {
   return (
     <React.Fragment>
-      <Personal />
-      <Introduction />
-      <Submit />
+      <PersonalForm />
+      <IntroductionForm />
+      <SubmitForm />
     </React.Fragment>
   );
 }

@@ -1,5 +1,5 @@
 // React -%- ////
-import React from "react";
+import * as React from "react";
 
 // Packages -%- ////
 import { useFormik } from "formik";
@@ -15,15 +15,20 @@ import type { RootState } from "../../redux/store";
 // Middleware & Integrations -%- ////
 
 // Application -%- ////
-export default function Personal() {
-  const form = useSelector((state: RootState) => state.counter.value);
+export default function SubmitForm({ handleSubmit }: any) {
+  const form = useSelector((state: RootState) => state.form.value);
+
+  const handleSubmitForm = async (form: any) => {
+    return await handleSubmit(form);
+  };
 
   const formik = useFormik({
     initialValues: {},
-    onSubmit: (values) => {
-      alert(JSON.stringify(form, null, 2));
+    onSubmit: () => {
+      return handleSubmitForm(form);
     },
   });
+
   return (
     <React.Fragment>
       <section className="block h-auto w-auto">
