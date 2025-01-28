@@ -6,8 +6,6 @@ import { NavLink } from "react-router";
 
 // Types -%- ////
 
-// System Components -%- ////
-
 // Components -%- ////
 
 // Middleware & Integrations -%- ////

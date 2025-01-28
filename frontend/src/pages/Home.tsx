@@ -5,8 +5,6 @@ import * as React from "react";
 
 // Types -%- ////
 
-// System Components -%- ////
-
 // Components -%- ////
 import Header from "../components/Header";
 

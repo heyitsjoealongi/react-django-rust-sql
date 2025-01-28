@@ -6,8 +6,6 @@ import { useNavigate } from "react-router";
 
 // Types -%- ////
 
-// System Components -%- ////
-
 // Components -%- ////
 import SignupForm from "../components/forms/Signup";
 import SubmitForm from "../components/forms/Submit";

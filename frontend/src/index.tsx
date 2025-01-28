@@ -1,16 +1,14 @@
 // React -%- ////
 import React from "react";
 import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./input.css";
 
 // Packages -%- ////
 import { Provider } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 // Types -%- ////
-
-// System Components -%- ////
-import App from "./App";
-import "./input.css";
 
 // Components -%- ////
 import HomePage from "./pages/Home";

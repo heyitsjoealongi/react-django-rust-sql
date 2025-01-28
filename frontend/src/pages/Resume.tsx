@@ -5,9 +5,8 @@ import * as React from "react";
 
 // Types -%- ////
 
-// System Components -%- ////
-
 // Components -%- ////
+import Branding from "../components/branding/Branding";
 import PersonalForm from "../components/forms/Personal";
 import IntroductionForm from "../components/forms/Introduction";
 import SubmitForm from "../components/forms/Submit";
@@ -18,6 +17,7 @@ import SubmitForm from "../components/forms/Submit";
 export default function ResumePage() {
   return (
     <React.Fragment>
+      <Branding />
       <PersonalForm />
       <IntroductionForm />
       <SubmitForm />

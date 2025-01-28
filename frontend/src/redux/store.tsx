@@ -5,8 +5,6 @@ import { configureStore } from "@reduxjs/toolkit";
 
 // Types -%- ////
 
-// System Components -%- ////
-
 // Components -%- ////
 
 // Middleware & Integrations -%- ////

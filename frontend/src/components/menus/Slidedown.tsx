@@ -17,8 +17,6 @@ type SlidedownProps = {
   }[];
 };
 
-// System Components -%- ////
-
 // Components -%- ////
 
 // Middleware & Integrations -%- ////

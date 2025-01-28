@@ -6,8 +6,6 @@ import { NavLink } from "react-router";
 
 // Types -%- ////
 
-// System Components -%- ////
-
 // Components -%- ////
 import Dropdown from "./menus/Dropdown";
 import Slidedown from "./menus/Slidedown";

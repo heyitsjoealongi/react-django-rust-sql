@@ -17,8 +17,6 @@ type DropdownProps = {
   }[];
 };
 
-// System Components -%- ////
-
 // Components -%- ////
 
 // Middleware & Integrations -%- ////

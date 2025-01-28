@@ -8,8 +8,6 @@ import { useSelector } from "react-redux";
 // Types -%- ////
 import type { RootState } from "../../redux/store";
 
-// System Components -%- ////
-
 // Components -%- ////
 
 // Middleware & Integrations -%- ////
@@ -34,7 +32,7 @@ export default function SubmitForm({ handleSubmit }: any) {
       <section className="block h-auto w-auto">
         <form
           onSubmit={formik.handleSubmit}
-          className="flex flex-col flex-nowrap justify-center my-9 px-9"
+          className="flex flex-col flex-nowrap justify-center mt-9"
         >
           <button
             type="submit"

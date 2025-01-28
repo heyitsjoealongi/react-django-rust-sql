@@ -7,9 +7,8 @@ import { useDispatch } from "react-redux";
 
 // Types -%- ////
 
-// System Components -%- ////
-
 // Components -%- ////
+import Branding from "../branding/Branding";
 
 // Middleware & Integrations -%- ////
 import { signup } from "../../redux/slices/formSlice";
@@ -35,8 +34,9 @@ export default function SignupForm() {
       <section className="block h-auto w-auto">
         <form
           onSubmit={formik.handleSubmit}
-          className="flex flex-col flex-nowrap justify-center my-9 p-9"
+          className="flex flex-col flex-nowrap justify-center"
         >
+          <Branding />
           <h3 className="block my-3 font-slab text-3xl font-medium subpixel-antialiased text-light">
             Signup
           </h3>

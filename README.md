@@ -35,7 +35,6 @@ python manage.py runserver
 // React -%- ////
 // Packages -%- ////
 // Types -%- ////
-// System Components -%- ////
 // Components -%- ////
 // Middleware & Integrations -%- ////
 // Application -%- ////
