@@ -14,21 +14,23 @@ npm start
 
 ## Backend (Python)
 
-python -m django --version
-
-django-admin startproject backend
-
 cd backend
 
-python -m pip install --upgrade pip
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+python3 -m pip install Django
+
+python3 -m pip install --upgrade pip
 
 pip freeze > requirements.txt
 
 pip install -r requirements.txt
 
-python -m pip check
+python3 -m pip check
 
-python manage.py runserver
+python3 manage.py runserver
 
 ## Structure
 

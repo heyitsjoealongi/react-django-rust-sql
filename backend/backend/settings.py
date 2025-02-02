@@ -87,12 +87,12 @@ if DEVELOPMENT_MODE is True:
         }
     }
 elif len(sys.argv) > 0 and sys.argv[1] != 'collectstatic':
-    if os.getenv("DBNAME", None) is None:
-        raise Exception("DBNAME environment variable not defined")
+    if os.getenv("NAME", None) is None:
+        raise Exception("NAME environment variable not defined")
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.getenv("DBNAME"),
+            'NAME': os.getenv("NAME"),
             'USER': os.getenv("USER"),
             'PASSWORD': os.getenv("PASSWORD"),
             'HOST': os.getenv("HOST"),
