@@ -1,6 +1,6 @@
-# bitsbythebyte
+# react-django-rust-sql
 
-A collection of tools and services for the cyberspace all-in-one application.
+A futureproof stack for enabling performance, security, and type safety.
 
 ## Frontend (React)
 
