@@ -49,6 +49,8 @@ python3 manage.py runserver
 
 Join us on [Zulip](https://availednetwork.zulipchat.com/#narrow/channel/484262-general/)
 
+Read our documentation on [GitBook](https://availed-network.gitbook.io/availednetwork-documentation/)
+
 ## License
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fheyitsjoealongi%2Freact-django-rust-sql.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fheyitsjoealongi%2Freact-django-rust-sql?ref=badge_large&issueType=license)
