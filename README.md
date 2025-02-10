@@ -1,4 +1,6 @@
 # react-django-rust-sql
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fheyitsjoealongi%2Freact-django-rust-sql.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fheyitsjoealongi%2Freact-django-rust-sql?ref=badge_shield)
+
 
 A futureproof stack for enabling performance, security, and type safety.
 
@@ -40,3 +42,7 @@ python3 manage.py runserver
 // Components -%- ////
 // Middleware & Integrations -%- ////
 // Application -%- ////
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fheyitsjoealongi%2Freact-django-rust-sql.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fheyitsjoealongi%2Freact-django-rust-sql?ref=badge_large)
