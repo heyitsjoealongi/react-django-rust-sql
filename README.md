@@ -43,7 +43,7 @@ python3 manage.py runserver
 
 ## Community
 
-Read our documentation on [GitBook](https://heyitsjoealongi.gitbook.io/react-django-rust-sql/)
+Read the documentation on [GitBook](https://heyitsjoealongi.gitbook.io/react-django-rust-sql/)
 
 Join the community on [Zulip](https://react-django-rust-sql.zulipchat.com/#narrow/channel/484275-general/topic/greetings/)
 
