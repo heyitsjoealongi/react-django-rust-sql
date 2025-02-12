@@ -22,19 +22,18 @@ export default function Privacy() {
       <hr />
       <p>
         Welcome to&nbsp;
-        <strong>Bits by the Byte</strong>.
+        <strong>Availed Network</strong>.
       </p>
       <p>
-        Bits by the Byte &nbsp;(&ldquo;us&rdquo;, &ldquo;we&rdquo;, or
-        &ldquo;our&rdquo;) operates&nbsp; https://bitsbythebyte.com/ and [●]
+        Availed Network &nbsp;(&ldquo;us&rdquo;, &ldquo;we&rdquo;, or
+        &ldquo;our&rdquo;) operates&nbsp; https://availed.network/ and [●]
         mobile application&nbsp;(hereinafter referred to as &ldquo;
         <strong>Service</strong>&rdquo;).
       </p>
       <p>
-        Our Privacy Policy governs your visit to&nbsp;
-        https://bitsbythebyte.com/ and [●] mobile application, and explains how
-        we collect, safeguard and disclose information that results from your
-        use of our Service.
+        Our Privacy Policy governs your visit to&nbsp; https://availed.network/
+        and [●] mobile application, and explains how we collect, safeguard and
+        disclose information that results from your use of our Service.
       </p>
       <p>
         We use your data to provide and improve Service. By using Service, you
@@ -57,9 +56,9 @@ export default function Privacy() {
       </ol>
       <hr />
       <p>
-        <strong>SERVICE&nbsp;</strong>means the&nbsp; https://bitsbythebyte.com/
-        website and [●] mobile application&nbsp;operated by&nbsp; Bits by the
-        Byte.
+        <strong>SERVICE&nbsp;</strong>means the&nbsp; https://availed.network/
+        website and [●] mobile application&nbsp;operated by&nbsp; Availed
+        Network.
       </p>
       <p>
         <strong>PERSONAL DATA</strong>&nbsp;means data about a living individual
@@ -151,7 +150,7 @@ export default function Privacy() {
         or promotional materials and other information that may be of interest
         to you. You may opt out of receiving any, or all, of these
         communications from us&nbsp;by following the unsubscribe link or by
-        emailing at&nbsp; email@bitsbythebyte.com.
+        emailing at&nbsp; email@availed.network.
       </p>
       <p>
         <strong>Usage Data</strong>
@@ -260,7 +259,7 @@ export default function Privacy() {
         </li>
       </ol>
       <hr />
-      <p>Bits by the Byte&nbsp;uses the collected data for various purposes:</p>
+      <p>Availed Network&nbsp;uses the collected data for various purposes:</p>
 
       <ul>
         <li>to provide and maintain our Service;</li>
@@ -377,7 +376,7 @@ export default function Privacy() {
         information represents your agreement to that transfer.
       </p>
       <p>
-        Bits by the Byte&nbsp;will take all the steps reasonably necessary to
+        Availed Network&nbsp;will take all the steps reasonably necessary to
         ensure that your data is treated securely and in accordance with this
         Privacy Policy and no transfer of your Personal Data will take place to
         an organisation or a country unless there are adequate controls in place
@@ -482,7 +481,7 @@ export default function Privacy() {
       <p>
         If you wish to be informed what Personal Data we hold about you and if
         you want it to be removed from our systems, please email us at{" "}
-        email@bitsbythebyte.com.
+        email@availed.network.
       </p>
       <p>
         In certain circumstances, you have the following data protection rights:
@@ -587,7 +586,7 @@ export default function Privacy() {
       <ul>
         <li>
           users are able to change their personal information by emailing us at{" "}
-          email@bitsbythebyte.com.
+          email@availed.network.
         </li>
       </ul>
 
@@ -715,8 +714,8 @@ export default function Privacy() {
         To exercise your California data protection rights described above,
         please send your request(s) by one of the following means:
       </p>
-      <p>By email: email@bitsbythebyte.com</p>
-      <p>By visiting this page on our website: https://bitsbythebyte.com/</p>
+      <p>By email: email@availed.network</p>
+      <p>By visiting this page on our website: https://availed.network/</p>
       <p>
         Your data protection rights, described above, are covered by the CCPA,
         short for the California Consumer Privacy Act. To find out more, visit
@@ -866,7 +865,7 @@ export default function Privacy() {
       </ol>
       <hr />
       <p>
-        Bits by the Byte&nbsp;uses remarketing services to advertise on third
+        Availed Network&nbsp;uses remarketing services to advertise on third
         party websites to you after you visited our Service. We and our
         third-party vendors use cookies to inform, optimise and serve ads based
         on your past visits to our Service.
@@ -1046,7 +1045,7 @@ export default function Privacy() {
       <p>
         If you have any questions about this Privacy Policy, please contact us:
       </p>
-      <p>By email: email@bitsbythebyte.com.</p>
+      <p>By email: email@availed.network.</p>
     </React.Fragment>
   );
 }

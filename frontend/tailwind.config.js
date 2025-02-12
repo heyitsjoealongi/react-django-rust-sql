@@ -3,12 +3,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: "#170202",
-        darkoff: "#3F0505",
-        light: "#EB2525",
-        bright: "#FFFFFF",
-        accent: "#FFAD05",
-        shade: "#8A7E72",
+        dark: "#0C090D",
+        darkoff: "#0A080B",
+        light: "#003F88",
+        bright: "#DAD2D8",
+        accent: "#90E0EF",
+        shade: "#473198",
       },
       fontFamily: {
         slab: ['"Roboto Slab"'],

@@ -12,9 +12,9 @@ npm install
 
 npm start
 
-## Backend (Python)
+## Middleware (Python)
 
-cd backend
+cd middleware
 
 python3 -m venv .venv
 
@@ -32,14 +32,18 @@ python3 -m pip check
 
 python3 manage.py runserver
 
+## Backend (Rust)
+
 ## Structure
 
+```markdown
 // React -%- ////
 // Packages -%- ////
 // Types -%- ////
 // Components -%- ////
 // Middleware & Integrations -%- ////
 // Application -%- ////
+```
 
 ## Community
 

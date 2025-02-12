@@ -25,8 +25,8 @@ export default function Branding() {
               className="self-center p-1 m-1"
             />
           </div>
-          <span className="inline-block h-fit w-fit self-center uppercase text-3xl min-[2000px]:text-3xl font-slab font-medium subpixel-antialiased text-light">
-            Bits by <br className="min-[2000px]:hidden" /> the Byte
+          <span className="inline-block h-fit w-fit self-center lowercase text-3xl min-[2000px]:text-3xl font-slab font-medium subpixel-antialiased text-light">
+            availed <br className="min-[2000px]:hidden" /> network
           </span>
         </div>
       </section>

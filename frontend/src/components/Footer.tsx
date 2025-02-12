@@ -44,7 +44,7 @@ export default function Footer() {
             />
           </NavLink>
           <p className="self-center justify-self-center my-3 min-[2000px]:my-0 text-sm font-normal subpixel-antialiased text-light">
-            Copyright © {year()} Bits by the Byte. All rights reserved.
+            Copyright © {year()} Availed Network. All rights reserved.
           </p>
           <ul className="self-center justify-self-end flex flex-row flex-nowrap items-center list-none">
             <li className="mx-auto text-sm font-normal subpixel-antialiased text-light">
