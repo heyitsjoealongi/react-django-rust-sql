@@ -24,7 +24,7 @@ export default function Footer() {
   return (
     <React.Fragment>
       <div className="mt-9"></div>
-      <footer className="block p-3 mt-auto border-t border-light">
+      <footer className="block p-3 mt-auto border-t border-primary">
         <section className="flex flex-col min-[2000px]:flex-row flex-nowrap justify-between items-center">
           <NavLink
             to="/"
@@ -43,11 +43,11 @@ export default function Footer() {
               className="mx-auto"
             />
           </NavLink>
-          <p className="self-center justify-self-center my-3 min-[2000px]:my-0 text-sm font-normal subpixel-antialiased text-light">
+          <p className="self-center justify-self-center my-3 min-[2000px]:my-0 text-sm font-normal subpixel-antialiased text-primary">
             Copyright © {year()} Availed Network. All rights reserved.
           </p>
           <ul className="self-center justify-self-end flex flex-row flex-nowrap items-center list-none">
-            <li className="mx-auto text-sm font-normal subpixel-antialiased text-light">
+            <li className="mx-auto text-sm font-normal subpixel-antialiased text-primary">
               <NavLink
                 to="/privacy"
                 target="_self"

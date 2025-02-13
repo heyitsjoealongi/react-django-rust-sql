@@ -15,7 +15,7 @@ export default function Branding() {
     <React.Fragment>
       <section className="block h-auto w-full">
         <div className="flex flex-row flex-nowrap mb-3 min-[2000px]:mb-6">
-          <div className="inline-block h-fit w-fit mr-3 min-[2000px]:mr-3 border border-light bg-dark">
+          <div className="inline-block h-fit w-fit mr-3 min-[2000px]:mr-3 border border-primary ">
             <img
               src="./logo.svg"
               loading="lazy"
@@ -25,7 +25,7 @@ export default function Branding() {
               className="self-center p-1 m-1"
             />
           </div>
-          <span className="inline-block h-fit w-fit self-center lowercase text-3xl min-[2000px]:text-3xl font-slab font-medium subpixel-antialiased text-light">
+          <span className="inline-block h-fit w-fit self-center lowercase text-3xl min-[2000px]:text-3xl font-slab font-medium subpixel-antialiased text-primary">
             availed <br className="min-[2000px]:hidden" /> network
           </span>
         </div>
