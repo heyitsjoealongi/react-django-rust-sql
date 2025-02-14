@@ -4,10 +4,10 @@
 
 body,
 html {
-  color: #90e0ef;
-  background-color: #0c090d;
+  color: #182e6f;
+  background-color: #dad2d8;
 }
 
 ::selection {
-  background: rgba(235, 37, 37, 0.09);
+  background: rgba(48, 92, 222, 0.09);
 }

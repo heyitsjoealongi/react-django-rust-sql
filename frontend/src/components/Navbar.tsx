@@ -49,7 +49,7 @@ export default function Navbar() {
 
   return (
     <React.Fragment>
-      <header className="block p-3 border-b border-light">
+      <header className="block p-3 border-b border-primary">
         <section className="flex flex-row flex-nowrap justify-between items-center">
           <NavLink
             to="/"
@@ -71,7 +71,7 @@ export default function Navbar() {
           <ul className="hidden self-center justify-self-center min-[2000px]:flex flex-row flex-nowrap space-x-4 list-none">
             {links?.map(({ id, category, href, target, dropdown }) => (
               <li
-                className="mx-auto text-sm font-normal subpixel-antialiased text-bright"
+                className="mx-auto text-sm font-normal subpixel-antialiased"
                 key={id}
               >
                 {dropdown?.length > 0 ? (
@@ -83,7 +83,7 @@ export default function Navbar() {
                     rel="noreferrer noopener"
                     aria-label="Articles Link"
                     type="link"
-                    className="flex flex-row flex-nowrap justify-center items-center py-1 px-3 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border-light active:bg-darkoff active:border-light"
+                    className="flex flex-row flex-nowrap justify-center items-center py-1 px-3 mx-auto text-base font-slab font-medium subpixel-antialiased text-primary border border-light rounded hover:bg-dark hover:bg-opacity-10 hover:border hover:border-primary hover:border-opacity-10 active:bg-dark active:bg-opacity-10 active:border active:border-primary active:border-opacity-10"
                   >
                     {category}
                   </a>
@@ -92,7 +92,7 @@ export default function Navbar() {
             ))}
           </ul>
           <ul className="hidden self-center justify-self-end min-[2000px]:flex flex-row flex-nowrap space-x-4 list-none">
-            <li className="mx-auto text-sm font-normal subpixel-antialiased text-light">
+            <li className="mx-auto text-sm font-normal subpixel-antialiased text-primary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -108,7 +108,7 @@ export default function Navbar() {
                 />
               </svg>
             </li>
-            <li className="mx-auto text-sm font-normal subpixel-antialiased text-light">
+            <li className="mx-auto text-sm font-normal subpixel-antialiased text-primary">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -148,11 +148,11 @@ export default function Navbar() {
         </section>
       </header>
       {open === true ? (
-        <section className="min-[2000px]:hidden block w-full p-3 bg-dark border border-light">
+        <section className="min-[2000px]:hidden block w-full p-3 bg-light border border-light">
           <ul className="flex flex-col flex-nowrap p-1 list-none">
             {links?.map(({ id, category, href, target, dropdown }) => (
               <li
-                className="text-sm font-normal subpixel-antialiased text-bright"
+                className="text-sm font-normal subpixel-antialiased text-primary"
                 key={id}
               >
                 {dropdown?.length > 0 ? (
@@ -164,7 +164,7 @@ export default function Navbar() {
                     rel="noreferrer noopener"
                     aria-label="Articles Link"
                     type="link"
-                    className="block p-1 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border hover:border-light active:bg-darkoff active:border active:border-light"
+                    className="block p-1 mx-auto text-base font-slab font-medium subpixel-antialiased text-primary border border-light rounded hover:bg-dark hover:bg-opacity-10 hover:border hover:border-primary hover:border-opacity-10 active:bg-dark active:bg-opacity-10 active:border active:border-primary active:border-opacity-10"
                   >
                     {category}
                   </a>

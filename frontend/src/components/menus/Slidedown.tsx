@@ -46,10 +46,10 @@ export default function Dropdown({
       <div className="relative block w-full">
         <button
           id={`${"dropdown" + id}`}
-          className="flex flex-row flex-nowrap justify-center items-center w-full p-1 border border-dark rounded hover:bg-darkoff hover:border hover:border-light hover:rounded active:bg-darkoff active:border active:border-light active:rounded"
+          className="flex flex-row flex-nowrap justify-center items-center w-full p-1 border text-primary border border-light rounded hover:bg-dark hover:bg-opacity-10 hover:border hover:border-primary hover:border-opacity-10 active:bg-dark active:bg-opacity-10 active:border active:border-primary active:border-opacity-10"
           onClick={() => toggle(!open)}
         >
-          <div className="pr-1 text-base font-slab font-medium subpixel-antialiased text-bright ">
+          <div className="pr-1 text-base font-slab font-medium subpixel-antialiased text-bright">
             {category}
           </div>
           {open === true ? (
@@ -93,7 +93,7 @@ export default function Dropdown({
             <ul className="flex flex-col flex-nowrap list-none">
               {dropdown?.map(({ id, title, description, href, target }) => (
                 <li
-                  className="text-sm font-normal subpixel-antialiased text-bright "
+                  className="text-sm font-normal subpixel-antialiased"
                   key={id}
                 >
                   <NavLink
@@ -102,12 +102,12 @@ export default function Dropdown({
                     rel="noreferrer noopener"
                     aria-label="Mobile Navbar Link"
                     type="link"
-                    className="block p-1 mx-auto text-base font-slab font-medium subpixel-antialiased text-bright border border-dark rounded hover:bg-darkoff hover:border hover:border-light hover:rounded active:bg-darkoff active:border active:border-light active:rounded"
+                    className="block p-3 mx-auto text-primary border border-light rounded hover:bg-dark hover:bg-opacity-10 hover:border hover:border-primary hover:border-opacity-10 active:bg-dark active:bg-opacity-10 active:border active:border-primary active:border-opacity-10"
                   >
-                    <span className="block text-base font-roboto font-medium subpixel-antialiased text-bright">
+                    <span className="block text-base font-roboto font-medium subpixel-antialiased">
                       {title}
                     </span>
-                    <span className="block text-sm font-roboto font-light subpixel-antialiased text-bright">
+                    <span className="block text-sm font-roboto font-light subpixel-antialiased">
                       {description}
                     </span>
                   </NavLink>
