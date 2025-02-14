@@ -8,6 +8,7 @@ module.exports = {
         primary: "#305CDE",
         light: "#DAD2D8",
         shade: "#0C090D",
+        transparent: "#0C090D",
       },
       fontFamily: {
         slab: ['"Roboto Slab"'],

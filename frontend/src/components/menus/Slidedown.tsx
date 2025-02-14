@@ -46,7 +46,7 @@ export default function Dropdown({
       <div className="relative block w-full">
         <button
           id={`${"dropdown" + id}`}
-          className="flex flex-row flex-nowrap justify-center items-center w-full p-1 border border-primary rounded hover:text-light hover:bg-dark hover:border hover:border-dark hover:rounded active:text-light active:bg-dark active:border active:border-dark active:rounded"
+          className="flex flex-row flex-nowrap justify-center items-center w-full p-1 border text-primary border border-light rounded hover:bg-dark hover:bg-opacity-10 hover:border hover:border-primary hover:border-opacity-10 active:bg-dark active:bg-opacity-10 active:border active:border-primary active:border-opacity-10"
           onClick={() => toggle(!open)}
         >
           <div className="pr-1 text-base font-slab font-medium subpixel-antialiased text-bright">
@@ -102,7 +102,7 @@ export default function Dropdown({
                     rel="noreferrer noopener"
                     aria-label="Mobile Navbar Link"
                     type="link"
-                    className="block p-1 mx-auto hover:text-light active:text-light border border-light rounded hover:bg-dark hover:border hover:border-dark hover:rounded active:bg-dark active:border active:border-light active:rounded"
+                    className="block p-3 mx-auto text-primary border border-light rounded hover:bg-dark hover:bg-opacity-10 hover:border hover:border-primary hover:border-opacity-10 active:bg-dark active:bg-opacity-10 active:border active:border-primary active:border-opacity-10"
                   >
                     <span className="block text-base font-roboto font-medium subpixel-antialiased">
                       {title}

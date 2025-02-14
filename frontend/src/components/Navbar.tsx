@@ -71,7 +71,7 @@ export default function Navbar() {
           <ul className="hidden self-center justify-self-center min-[2000px]:flex flex-row flex-nowrap space-x-4 list-none">
             {links?.map(({ id, category, href, target, dropdown }) => (
               <li
-                className="mx-auto text-sm font-normal subpixel-antialiased text-primary"
+                className="mx-auto text-sm font-normal subpixel-antialiased"
                 key={id}
               >
                 {dropdown?.length > 0 ? (
@@ -83,7 +83,7 @@ export default function Navbar() {
                     rel="noreferrer noopener"
                     aria-label="Articles Link"
                     type="link"
-                    className="flex flex-row flex-nowrap justify-center items-center py-1 px-3 mx-auto text-base font-slab font-medium subpixel-antialiased text-primary border border-primary rounded hover:text-light hover:bg-dark hover:border hover:border-dark hover:rounded active:text-light active:bg-dark active:border active:border-dark active:rounded"
+                    className="flex flex-row flex-nowrap justify-center items-center py-1 px-3 mx-auto text-base font-slab font-medium subpixel-antialiased text-primary border border-light rounded hover:bg-dark hover:bg-opacity-10 hover:border hover:border-primary hover:border-opacity-10 active:bg-dark active:bg-opacity-10 active:border active:border-primary active:border-opacity-10"
                   >
                     {category}
                   </a>
@@ -164,7 +164,7 @@ export default function Navbar() {
                     rel="noreferrer noopener"
                     aria-label="Articles Link"
                     type="link"
-                    className="block p-1 mx-auto text-base font-slab font-medium subpixel-antialiased text-primary border border-light rounded hover:bg-dark hover:border hover:border-primary active:bg-dark active:border active:border-primary"
+                    className="block p-1 mx-auto text-base font-slab font-medium subpixel-antialiased text-primary border border-light rounded hover:bg-dark hover:bg-opacity-10 hover:border hover:border-primary hover:border-opacity-10 active:bg-dark active:bg-opacity-10 active:border active:border-primary active:border-opacity-10"
                   >
                     {category}
                   </a>
