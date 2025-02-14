@@ -15,7 +15,7 @@ export default function Branding() {
     <React.Fragment>
       <section className="block h-auto w-full">
         <div className="flex flex-row flex-nowrap mb-3 min-[2000px]:mb-6">
-          <div className="inline-block h-fit w-fit mr-3 min-[2000px]:mr-3 border border-primary ">
+          <div className="inline-block h-fit w-fit mr-3 min-[2000px]:mr-3 border border-primary">
             <img
               src="./logo.svg"
               loading="lazy"
