@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ["./src/**/*.{js,jsx,ts,tsx,html}", "./public/index.html"],
+module.exports = {
   theme: {
     extend: {
       colors: {
@@ -18,4 +17,5 @@ export default {
     },
   },
   plugins: [],
+  content: ["./src/**/*.{js,jsx,ts,tsx,html}", "./public/index.html"],
 };

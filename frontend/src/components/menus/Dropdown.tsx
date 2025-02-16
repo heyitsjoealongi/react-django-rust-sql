@@ -93,7 +93,7 @@ export default function Dropdown({
             <ul className="block w-auto flex flex-col flex-wrap mx-auto list-none">
               {dropdown?.map(({ id, title, description, href, target }) => (
                 <li
-                  className="m-0.5 text-primary border border-light rounded hover:bg-dark hover:bg-opacity-10 hover:border hover:border-primary hover:border-opacity-10 active:bg-dark active:bg-opacity-10 active:border active:border-primary active:border-opacity-10"
+                  className="text-primary border border-light rounded hover:bg-dark hover:bg-opacity-10 hover:border hover:border-primary hover:border-opacity-10 active:bg-dark active:bg-opacity-10 active:border active:border-primary active:border-opacity-10"
                   key={id}
                 >
                   <NavLink
