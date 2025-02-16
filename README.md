@@ -4,15 +4,19 @@ A futureproof stack for enabling performance, security, and type safety.
 
 ## Frontend (React)
 
-npx create-react-app frontend --template typescript
+https://docs.reown.com/appkit/react/core/installation
+
+npx @reown/appkit-cli
 
 cd frontend
 
 npm install
 
-npm start
+npm run dev
 
-## Middleware (Python)
+## Middleware (Django)
+
+https://docs.djangoproject.com/en/4.2/intro/tutorial01/
 
 cd middleware
 
@@ -33,6 +37,12 @@ python3 -m pip check
 python3 manage.py runserver
 
 ## Backend (Rust)
+
+https://doc.rust-lang.org/rust-by-example/hello.html
+
+rustc main.rs
+
+./main
 
 ## Structure
 
