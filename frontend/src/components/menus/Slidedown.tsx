@@ -46,7 +46,7 @@ export default function Dropdown({
       <div className="relative block w-full">
         <button
           id={`${"dropdown" + id}`}
-          className="flex flex-row flex-nowrap justify-center items-center w-full p-1 border text-primary border border-light rounded hover:bg-dark hover:bg-opacity-10 hover:border hover:border-primary hover:border-opacity-10 active:bg-dark active:bg-opacity-10 active:border active:border-primary active:border-opacity-10"
+          className="flex flex-row flex-nowrap justify-center items-center w-full p-1 border text-primary border-light rounded cursor-pointer hover:bg-dark hover:bg-opacity-10 hover:border hover:border-primary hover:border-opacity-10 active:bg-dark active:bg-opacity-10 active:border active:border-primary active:border-opacity-10"
           onClick={() => toggle(!open)}
         >
           <div className="pr-1 text-base font-slab font-medium subpixel-antialiased text-bright">

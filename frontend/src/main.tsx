@@ -2,6 +2,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import App from "./App";
+import "./index.css";
 
 // Packages -%- ////
 import { Provider } from "react-redux";
@@ -38,5 +39,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         </Routes>
       </BrowserRouter>
     </Provider>
-  </React.StrictMode>,
+  </React.StrictMode>
 );

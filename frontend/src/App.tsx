@@ -1,15 +1,14 @@
 // React -%- ////
 import * as React from "react";
-import "./App.css";
 
 // Packages -%- ////
 import { createAppKit } from "@reown/appkit/react";
 import { WagmiProvider } from "wagmi";
-import { useState } from "react";
+// import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ActionButtonList } from "./components/ActionButtonList";
-import { SmartContractActionButtonList } from "./components/SmartContractActionButtonList";
-import { InfoList } from "./components/InfoList";
+// import { ActionButtonList } from "./components/ActionButtonList";
+// import { SmartContractActionButtonList } from "./components/SmartContractActionButtonList";
+// import { InfoList } from "./components/InfoList";
 import { projectId, metadata, networks, wagmiAdapter } from "./config";
 
 // Components -%- ////
@@ -20,6 +19,7 @@ import Footer from "./components/Footer";
 
 // Middleware & Integrations -%- ////
 const queryClient = new QueryClient();
+
 const generalConfig = {
   projectId,
   networks,
