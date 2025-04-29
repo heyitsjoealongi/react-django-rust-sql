@@ -51,7 +51,7 @@ rustc main.rs
 
 ## Community
 
-Read the documentation on [GitBook](https://heyitsjoealongi.gitbook.io/react-django-rust-sql/)
+Read the documentation on [GitBook](https://heyitsjoealongi.gitbook.io/react-spring-rust-sql)
 
 Reach out directly on [X](https://x.com/heyitsjoealongi/)
 
