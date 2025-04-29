@@ -1,4 +1,4 @@
-# React Django Rust SQL
+# React Spring Rust SQL
 
 A futureproof stack for enabling performance, security, and type safety.
 
@@ -14,27 +14,15 @@ npm install
 
 npm run dev
 
-## Middleware (Django)
+## Middleware (Java)
 
-https://docs.djangoproject.com/en/4.2/intro/tutorial01/
+https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.5.0-SNAPSHOT&packaging=jar&jvmVersion=21&groupId=com.reactspringrustsql&artifactId=middleware&name=middleware&description=Middleware%20for%20React%20Spring%20Rust%20SQL&packageName=com.reactspringrustsql.middleware&dependencies=web,security,data-jpa,data-jdbc,docker-compose,data-rest,lombok,oauth2-client,oauth2-authorization-server
+
+https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-21
 
 cd middleware
 
-python3 -m venv .venv
-
-source .venv/bin/activate
-
-python3 -m pip install Django
-
-python3 -m pip install --upgrade pip
-
-pip freeze > requirements.txt
-
-pip install -r requirements.txt
-
-python3 -m pip check
-
-python3 manage.py runserver
+./gradlew bootRun
 
 ## Backend (Rust)
 
