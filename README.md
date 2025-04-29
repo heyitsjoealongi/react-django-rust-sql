@@ -2,7 +2,7 @@
 
 A futureproof stack for enabling performance, security, and type safety.
 
-## Frontend (React)
+## Frontend (React - JavaScript)
 
 https://docs.reown.com/appkit/react/core/installation
 
@@ -14,9 +14,9 @@ npm install
 
 npm run dev
 
-## Middleware (Java)
+## Middleware (Spring Boot - Java)
 
-https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.5.0-SNAPSHOT&packaging=jar&jvmVersion=21&groupId=com.reactspringrustsql&artifactId=middleware&name=middleware&description=Middleware%20for%20React%20Spring%20Rust%20SQL&packageName=com.reactspringrustsql.middleware&dependencies=web,security,data-jpa,data-jdbc,docker-compose,data-rest,lombok,oauth2-client,oauth2-authorization-server
+https://start.spring.io/#!type=gradle-project&language=java&platformVersion=3.5.0-SNAPSHOT&packaging=jar&jvmVersion=21&groupId=com.reactspringrustsql&artifactId=middleware&name=middleware&description=Middleware%20for%20React%20Spring%20Rust%20SQL&packageName=com.reactspringrustsql.middleware&dependencies=web,security,data-jpa,lombok,oauth2-client,oauth2-authorization-server
 
 https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-21
 
