@@ -22,6 +22,12 @@ https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-21
 
 cd middleware
 
+Build:
+./gradlew build
+
+https://docs.spring.io/spring-boot/gradle-plugin/running.html
+
+Start:
 ./gradlew bootRun
 
 ## Backend (Rust)
@@ -51,4 +57,4 @@ Reach out directly on [X](https://x.com/heyitsjoealongi/)
 
 ## License
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fheyitsjoealongi%2Freact-django-rust-sql.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fheyitsjoealongi%2Freact-django-rust-sql?ref=badge_large&issueType=license)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fheyitsjoealongi%2Freact-spring-rust-sql.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fheyitsjoealongi%2Freact-spring-rust-sql?ref=badge_large&issueType=license)
